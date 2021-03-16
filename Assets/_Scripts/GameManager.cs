@@ -42,12 +42,12 @@ public class GameManager
        pontos++;
    }
 
-   public void Restart(){
+   public void Restart(bool useStateDelagete){
         vidas = 10;
         pontos = 0;
         pup = 2;
         is_paused = false;
-        changeStateDelegate();
+        if(useStateDelagete) changeStateDelegate();
    }
 
    public void TogglePause(){

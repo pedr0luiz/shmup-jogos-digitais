@@ -19,7 +19,7 @@ public class EndScript : MonoBehaviour
    }
 
     public void Game(){
-        gm.Restart();
         SceneManager.LoadScene("Game");
+        gm.Restart(false);
     }
 }

@@ -38,6 +38,6 @@ public class UIManager : MonoBehaviour
 
    public void Recomecar(){
        timer = 0;
-       gm.Restart();
+       gm.Restart(true);
    }
 }
